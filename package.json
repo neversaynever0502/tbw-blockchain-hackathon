@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "contract:test": "npx hardhat test",
+    "contract:deploy": "npx hardhat run src/smartContract/scripts/deploySimpleStorage.js --network opBNB"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.1",
